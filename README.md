@@ -1,7 +1,7 @@
 # CRUD. Generator
 
 ### Introduction
-**This package is a useful tool to generate simple crud for [laravel-modules/scaffolding](https://github.com/laravel-modules/scaffolding)** 
+**This package is a useful tool to generate simple crud for [Kamalsroor/scaffoldingNew](https://github.com/Kamalsroor/scaffoldingNew)** 
 
 the files that will be generated is:
 - Lang Files (ar & en)
