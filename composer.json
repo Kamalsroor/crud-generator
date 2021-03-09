@@ -1,0 +1,29 @@
+{
+  "name": "kamal-sroor/crud-generator",
+  "description": "This package is a useful tool to generate simple crud for laravel-modules/scaffolding",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kamal Sroor",
+      "email": "kamal.s.sroor@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "illuminate/support": "^6.0|^7.0|^8.0",
+    "illuminate/console": "^6.0|^7.0|^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "KamalSroor\\CrudGenerator\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "KamalSroor\\CrudGenerator\\CrudServiceProvider"
+      ]
+    }
+  }
+}
