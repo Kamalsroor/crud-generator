@@ -19,7 +19,7 @@ the files that will be generated is:
 
 ### Installation
 ```shell
-composer require kamal-sroor/crud-generator --dev
+composer require kamalsroor/crud-generator --dev
 ```
 ### Configuration
 You should add config file using the following command to configure the supported resources.
