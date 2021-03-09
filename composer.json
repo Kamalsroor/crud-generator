@@ -1,5 +1,5 @@
 {
-  "name": "kamalsroor/crud-generator",
+  "name": "kamal-sroor/crud-generator",
   "description": "This package is a useful tool to generate simple crud for laravel-modules/scaffolding",
   "type": "library",
   "license": "MIT",
