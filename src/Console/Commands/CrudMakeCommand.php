@@ -17,6 +17,8 @@ use KamalSroor\CrudGenerator\Console\Commands\Generators\Resource;
 use KamalSroor\CrudGenerator\Console\Commands\Generators\Migration;
 use KamalSroor\CrudGenerator\Console\Commands\Generators\Breadcrumb;
 use KamalSroor\CrudGenerator\Console\Commands\Generators\Controller;
+use KamalSroor\CrudGenerator\Console\Commands\Generators\VirtualResource;
+use KamalSroor\CrudGenerator\Console\Commands\Generators\VirtualModel;
 
 class CrudMakeCommand extends Command
 {
@@ -67,6 +69,8 @@ class CrudMakeCommand extends Command
         Request::generate($this);
         Filter::generate($this);
         Test::generate($this);
+        VirtualResource::generate($this);
+        VirtualModel::generate($this);
 
         $name = $this->argument('name');
 
@@ -83,6 +87,6 @@ class CrudMakeCommand extends Command
         $seederName = Str::of($name)->singular()->studly().'Seeder';
 
         $this->info('Api Crud for '.$name.' created successfully 🎉');
-        $this->warn('Please run "composer dump-autoload && php artisan migrate && php artisan db:seed --class='.$seederName.'"');
+        $this->warn('Please run "composer dump-autoload && php artisan migrate && php artisan db:seed --class='.$seederName.' && php artisan l5-swagger:generate"');
     }
 }
