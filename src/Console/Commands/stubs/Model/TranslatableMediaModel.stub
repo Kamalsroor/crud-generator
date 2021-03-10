@@ -11,7 +11,7 @@ use Astrotomic\Translatable\Translatable;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use KamalSroor\LaravelMediaUploader\Entities\Concerns\HasUploader;
+use AhmedAliraqi\LaravelMediaUploader\Entities\Concerns\HasUploader;
 use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 
 class {{studlySingular}} extends Model implements HasMedia, TranslatableContract
