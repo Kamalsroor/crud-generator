@@ -2,14 +2,14 @@
 
 /**
  * @OA\Schema(
- *     title="Category",
- *     description="Category model",
+ *     title="{{studlySingular}}",
+ *     description="{{studlySingular}} model",
  *     @OA\Xml(
- *         name="Category"
+ *         name="{{studlySingular}}"
  *     )
  * )
  */
-class Category
+class {{studlySingular}}
 {
 
     /**
@@ -27,8 +27,8 @@ class Category
     /**
      * @OA\Property(
      *      title="Name",
-     *      description="Name of the new category",
-     *      example="A nice category"
+     *      description="Name of the new {{lowercaseSingular}}",
+     *      example="A nice {{lowercaseSingular}}"
      * )
      *
      * @var string

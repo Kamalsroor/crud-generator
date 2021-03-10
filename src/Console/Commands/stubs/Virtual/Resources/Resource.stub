@@ -1,14 +1,14 @@
 <?php
 /**
  * @OA\Schema(
- *     title="CategoryResource",
- *     description="Category resource",
+ *     title="{{studlySingular}}Resource",
+ *     description="{{studlySingular}} resource",
  *     @OA\Xml(
- *         name="CategoryResource"
+ *         name="{{studlySingular}}Resource"
  *     )
  * )
  */
-class CategoryResource
+class {{studlySingular}}Resource
 {
     /**
      * @OA\Property(
@@ -16,7 +16,7 @@ class CategoryResource
      *     description="Data wrapper"
      * )
      *
-     * @var \App\Virtual\Models\Category
+     * @var \App\Virtual\Models\{{studlySingular}}
      */
     private $data;
 }
