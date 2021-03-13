@@ -13,7 +13,17 @@
                 <x-check-all-delete
                     type="{{ \App\Models\{{studlySingular}}::class }}"
                     :resource="trans('{{lowercasePlural}}.plural')"></x-check-all-delete>
-
+                <x-import-excel
+                            model="{{ \App\Models\{{studlySingular}}::class }}"
+                            import="{{ \App\Imports\{{studlyPlural}}Import::class }}"
+                            exportResource="{{ App\Http\Resources\{{studlySingular}}Resource::class }}"
+                            :resource="trans('{{lowercasePlural}}.plural')"></x-import-excel>
+                <x-export-excel
+                            model="{{ \App\Models\{{studlySingular}}::class }}"
+                            export="{{ \App\Exports\Export::class }}"
+                            resource="{{ App\Http\Resources\{{studlySingular}}Resource::class }}"
+                            fileName="{{studlyPlural}}"
+                            ></x-export-excel>
                 <div class="ml-2 d-flex justify-content-between flex-grow-1">
                     @include('dashboard.{{lowercasePlural}}.partials.actions.create')
                     @include('dashboard.{{lowercasePlural}}.partials.actions.trashed')

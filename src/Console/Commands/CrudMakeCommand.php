@@ -19,6 +19,7 @@ use KamalSroor\CrudGenerator\Console\Commands\Generators\Breadcrumb;
 use KamalSroor\CrudGenerator\Console\Commands\Generators\Controller;
 use KamalSroor\CrudGenerator\Console\Commands\Generators\VirtualResource;
 use KamalSroor\CrudGenerator\Console\Commands\Generators\VirtualModel;
+use KamalSroor\CrudGenerator\Console\Commands\Generators\Import;
 
 class CrudMakeCommand extends Command
 {
@@ -71,6 +72,7 @@ class CrudMakeCommand extends Command
         Test::generate($this);
         VirtualResource::generate($this);
         VirtualModel::generate($this);
+        Import::generate($this);
 
         $name = $this->argument('name');
 
