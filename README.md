@@ -16,7 +16,9 @@ the files that will be generated is:
 - Request Files
 - Filter Files
 - Test Files
-
+- Excel Import Export
+- Soft Delete
+- Swagger Api 
 ### Installation
 ```shell
 composer require kamalsroor/crud-generator --dev
